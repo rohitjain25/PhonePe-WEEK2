@@ -117,11 +117,26 @@ cat $LOGFILE \
 | head -5
 
 echo""
-###################################################
+################################################### 
+
+echo "4.)Print Status Code received by each host"
+echo "==========================================="
+
+cat $LOGFILE \
+| awk '{print $15 " " $7}' \
+| sort \
+| uniq -c \
+| sort -rn \
+| head -20
+
+echo""
 
 
+
+################################################### 
 
 echo "5.)Get all request for the last 10 minutes"
+echo "==========================================="
 
 cat $LOGFILE \
 | awk "/^$(date --date="-10 min" "+%b %_d %H:%M")/{p++} p"\
@@ -135,7 +150,7 @@ echo""
 
 
 echo "6.)Get all the requests taking more than 2/5/10 secs to respond"
-echo"" 
+echo "================================================================" 
 echo "*All requests taking more than 10 seconds"
 
 cat $LOGFILE \
