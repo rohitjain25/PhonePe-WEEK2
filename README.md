@@ -12,27 +12,27 @@ Write a bash script to part the logs and provide the stats mentioned below:
 
 1. summary for the day/week/month:
 
-#highest requested host
+      #highest requested host
 
-#highest requested upstream\_ip
+      #highest requested upstream\_ip
 
-#highest requested path (upto 2 subdirectories ex: /check/balance)
+      #highest requested path (upto 2 subdirectories ex: /check/balance)
 
 2. total requests per status code (Ex: count of requests returning 404/401/502/504/500/200)
 
 3. Top requests
 
-#top 5 requests by upstream\_ip
+      #top 5 requests by upstream\_ip
 
-#top 5 requests by host
+      #top 5 requests by host
 
-#top 5 requests by bodyBytesSent
+      #top 5 requests by bodyBytesSent
 
-#top 5 requests by path (upto 2 subdirectories ex: /check/balance)
+      #top 5 requests by path (upto 2 subdirectories ex: /check/balance)
 
-#top 5 requests with the highest response time
+      #top 5 requests with the highest response time
 
-#get top 5 requests returning 200/5xx/4xx per host
+      #get top 5 requests returning 200/5xx/4xx per host
 
 4. find the time last 200/5xx/4xx was received for a particular host
 
