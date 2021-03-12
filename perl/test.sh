@@ -3,7 +3,7 @@ logfile=/Users/rohitj.intern/Desktop/task2.log
 logfile1=/Users/rohitj.intern/Desktop/task2.log
 write_file=record.txt
 
-# ip=$(awk '{print $1}' $logfile)
+# .ip=$(awk '{print $1}' $logfile)
 # # printf "$ip\n"
 # # date=$(awk '{print $2}' $logfile)
 # # printf "$date\n"
