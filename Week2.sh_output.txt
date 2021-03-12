@@ -1,0 +1,121 @@
+-----------------
+|TASK FOR WEEK 2|
+-----------------
+
+1.summary for the month:
+=========================
+
+*highest requested host:
+ 676 apptwo.ppops.com
+
+*highest requested upstream_ip:
+ 117 10.77.22.10:80
+
+*highest requested path:
+   6 /myapi/consumers/open%20system
+
+2.Total requests per status code
+=================================
+
+ 414 504
+ 419 401
+ 440 405
+ 464 301
+ 500 201
+ 501 501
+ 510 304
+ 519 403
+ 519 503
+ 521 406
+ 521 500
+ 522 400
+ 522 404
+ 533 416
+ 548 100
+ 570 205
+ 571 203
+ 585 302
+ 626 204
+ 641 502
+43826 200
+
+
+3.Top requests:
+===============
+
+*top 5 requests by upstream_ip:
+1701 10.77.22.10:80
+1683 10.77.27.14:8443
+1675 10.77.22.11:443
+1603 10.77.22.12:443
+1598 10.77.22.11:80
+
+*top 5 requests by host:
+11091 prod.ppops.pm5
+11062 appone.ppops.com
+10815 api.ppops.com
+10713 apptwo.ppops.com
+10591 apptwo-new.ppops.com
+
+*top 5 requests by bodyBytesSent:
+ 179 38
+ 160 70
+ 158 51
+ 157 61
+ 157 60
+
+*top 5 requests by path:
+  47 /recharge/phone/bandwidth-monitored
+  45 /recharge/dth/empowering
+  38 /myapi/kyc/needs-based
+  37 /recharge/dth/info-mediaries
+  35 /myapi/kyc/groupware
+
+*top 5 requests with the highest response time
+ 101 0.814
+  96 0.101
+  91 0.238
+  91 0.051
+  90 0.733
+
+*get top 5 requests returning 200/5xx/4xx per host
+ 414 504
+ 419 401
+ 440 405
+ 464 301
+ 500 201
+
+5.)Get all request for the last 10 minutes:
+===========================================
+1 0.0.56.95 07/Mar/2021:16:46:33 +3370 "PUT /myapi/consumers/encoding/Reverse-engineered/logistical HTTP/1.1" 200 0.879 10.77.22.14:8443 2848 "-" "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_8_0) AppleWebKit/5342 (KHTML, like Gecko) Chrome/36.0.835.0 Mobile Safari/5342" TLSv1.2/ECDHE-RSA-AES256-GCM-SHA384 62b923587b05d59b-BOM application/json; charset=utf-8 apptwo-new.ppops.com
+
+1 0.0.56.95 08/Mar/2021:08:46:33 +3370 "PUT /myapi/consumers/encoding/Reverse-engineered/logistical HTTP/1.1" 200 0.879 10.77.22.14:8443 2848 "-" "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_8_0) AppleWebKit/5342 (KHTML, like Gecko) Chrome/36.0.835.0 Mobile Safari/5342" TLSv1.2/ECDHE-RSA-AES256-GCM-SHA384 62b923587b05d59b-BOM application/json; charset=utf-8 apptwo-new.ppops.com
+
+1 0.0.56.95 08/Mar/2021:12:46:33 +3370 "PUT /myapi/consumers/encoding/Reverse-engineered/logistical HTTP/1.1" 200 0.879 10.77.22.14:8443 2848 "-" "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_8_0) AppleWebKit/5342 (KHTML, like Gecko) Chrome/36.0.835.0 Mobile Safari/5342" TLSv1.2/ECDHE-RSA-AES256-GCM-SHA384 62b923587b05d59b-BOM application/json; charset=utf-8 apptwo-new.ppops.com
+
+1 0.10.20.123 06/Mar/2021:07:31:36 +3670 "GET /recharge/phone/parallelism%20Optimized/homogeneous HTTP/1.1" 200 0.992 10.77.22.14:443 2986 "-" "Mozilla/5.0 (Windows 98) AppleWebKit/5342 (KHTML, like Gecko) Chrome/38.0.852.0 Mobile Safari/5342" TLSv1.2/ECDHE-RSA-AES256-GCM-SHA384 62b923587b05d59b-BOM application/json; charset=utf-8 appone.ppops.com
+
+1 0.10.20.123 06/Mar/2021:08:31:36 +3670 "GET /recharge/phone/parallelism%20Optimized/homogeneous HTTP/1.1" 200 0.992 10.77.22.14:443 2986 "-" "Mozilla/5.0 (Windows 98) AppleWebKit/5342 (KHTML, like Gecko) Chrome/38.0.852.0 Mobile Safari/5342" TLSv1.2/ECDHE-RSA-AES256-GCM-SHA384 62b923587b05d59b-BOM application/json; charset=utf-8 appone.ppops.com
+
+6.)Get all the requests taking more than 2/5/10 secs to respond
+
+*All requests taking more than 10 seconds
+   1 10.006 229.218.34.118 apptwo.ppops.com
+   1 10.031 121.153.105.80 api.ppops.com
+   1 10.045 172.83.218.111 appone.ppops.com
+   1 10.069 146.32.3.148 prod.ppops.pm5
+   1 10.113 219.63.76.170 appone.ppops.com
+
+*All requests taking more than 5 seconds
+   1 10.006 229.218.34.118 apptwo.ppops.com
+   1 10.031 121.153.105.80 api.ppops.com
+   1 10.045 172.83.218.111 appone.ppops.com
+   1 10.069 146.32.3.148 prod.ppops.pm5
+   1 10.113 219.63.76.170 appone.ppops.com
+
+*All requests taking more than 2 seconds
+   1 10.006 229.218.34.118 apptwo.ppops.com
+   1 10.031 121.153.105.80 api.ppops.com
+   1 10.045 172.83.218.111 appone.ppops.com
+   1 10.069 146.32.3.148 prod.ppops.pm5
+   1 10.113 219.63.76.170 appone.ppops.com
