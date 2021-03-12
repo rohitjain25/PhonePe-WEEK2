@@ -1,41 +1,33 @@
-#WEEK-2\
-PhonePe Task week#2\
-Logfile:
+>#WEEK-2\
+>PhonePe Task week#2\
 
-[https://raw.githubusercontent.com/aratik711/nginx-log-generator/main/access.log](https://raw.githubusercontent.com/aratik711/nginx-log-generator/main/access.log)
+>Logfile:
+>[https://raw.githubusercontent.com/aratik711/nginx-log-generator/main/access.log](https://raw.githubusercontent.com/aratik711/nginx-log-generator/main/access.log)
 
-The format of the logs is as follows:
+#The Example of a ngnix access.log file\
 
-ip, time, httpMethod, path, httpVersion, statusCode, responseTime, upstream\_ip:port, bodyBytesSent, referrer, userAgent, ssl\_protocol, content\_type, host
+ip: 179.83.110.181
 
-Write a bash script to part the logs and provide the stats mentioned below:
+time: 12/Feb/2021:06:52:54 +5470
 
-1. summary for the day/week/month:
+httpMethod: GET
 
-      #highest requested host
+path: /recharge/phone/time-frame
 
-      #highest requested upstream\_ip
+httpVersion: HTTP/1.1
 
-      #highest requested path (upto 2 subdirectories ex: /check/balance)
+statusCode: 200
 
-2. total requests per status code (Ex: count of requests returning 404/401/502/504/500/200)
+Response time: 0.155
 
-3. Top requests
+upstream\_ip:port: 10.77.27.14:443
 
-      #top 5 requests by upstream\_ip
+bodyBytesSent: 1957
 
-      #top 5 requests by host
+referrer: &quot;-&quot;
 
-      #top 5 requests by bodyBytesSent
+userAgent: Mozilla/5.0 (Windows NT 6.0; en-US; rv:1.9.2.20) Gecko/1990-03-11 Firefox/36.0
 
-      #top 5 requests by path (upto 2 subdirectories ex: /check/balance)
+ssl\_protocol: TLSv1.2/ECDHE-RSA-AES256-GCM-SHA384 62b923587b05d59b-BOM content\_type: application/json; charset=utf-8
 
-      #top 5 requests with the highest response time
-
-      #get top 5 requests returning 200/5xx/4xx per host
-
-4. find the time last 200/5xx/4xx was received for a particular host
-
-5. get all request for the last 10 minutes
-
-6. get all the requests taking more than 2/5/10 secs to respond
+host: api.ppops.com
