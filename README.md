@@ -1,11 +1,7 @@
 ```
 PhonePe Task Week#2
 ```
-<br />
-<p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+
 >Logfile:
 >[https://raw.githubusercontent.com/aratik711/nginx-log-generator/main/access.log](https://raw.githubusercontent.com/aratik711/nginx-log-generator/main/access.log)
 
