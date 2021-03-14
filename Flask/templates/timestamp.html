@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<p>Hello from app record page </p>
+{% if record_date|length >= 1 %}
+{{record_date}}
+{% else %}
+<p> Sorry no record found
+{% endif %}
+{% endblock %}
