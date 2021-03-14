@@ -1,4 +1,4 @@
-#!/bin/bash
+
 logfile=/Users/rohitj.intern/Desktop/task2.log
 logfile1=/Users/rohitj.intern/Desktop/task2.log
 write_file=record.txt
