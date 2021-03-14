@@ -12,6 +12,11 @@ UPLOAD PAGE
 <img width="872" alt="Screenshot 2021-03-15 at 2 11 29 AM" src="https://user-images.githubusercontent.com/30120666/111083524-0a262e00-8534-11eb-94e0-be14a6a0186a.png">
 
 ```
+MAIN PAGE
+```
+<img width="875" alt="Screenshot 2021-03-15 at 2 15 44 AM" src="https://user-images.githubusercontent.com/30120666/111083636-802a9500-8534-11eb-8d1c-132fbdd2bac3.png">
+
+```
 Task accomplished Checkbox
 ```
 >- [x] Write a bash script to part the logs and provide the stats mentioned below
