@@ -1,3 +1,4 @@
+
 ```
 PhonePe Task Week#2
 ```
@@ -5,9 +6,11 @@ PhonePe Task Week#2
 >Logfile:
 >[https://raw.githubusercontent.com/aratik711/nginx-log-generator/main/access.log](https://raw.githubusercontent.com/aratik711/nginx-log-generator/main/access.log)
 
+```
+UPLOAD PAGE
+```
+<img width="872" alt="Screenshot 2021-03-15 at 2 11 29 AM" src="https://user-images.githubusercontent.com/30120666/111083524-0a262e00-8534-11eb-94e0-be14a6a0186a.png">
 
->USE THIS LINK TO WATCH THE SCREEN RECORDING OF THE WEBPAGE \
->https://user-images.githubusercontent.com/30120666/110916358-ba324600-833e-11eb-8326-2790050885fa.mov
 ```
 Task accomplished Checkbox
 ```
