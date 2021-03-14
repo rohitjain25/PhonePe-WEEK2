@@ -13,4 +13,4 @@ Task accomplished Checkbox
 ```
 >- [x] Write a bash script to part the logs and provide the stats mentioned below
 >- [x] Write a perl script to generate the above output in HTML where each Day is a collapsible button and when clicked it shows the stats
->- [ ] Create a web UI using Python Flask where we upload an nginx log file and it creates a view like the above perl script [Working on it]
+>- [x] Create a web UI using Python Flask where we upload an nginx log file and it creates a view like the above perl script [Working on it]
