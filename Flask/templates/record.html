@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="mt-auto ">
+  {% for element1, element2 in data_date_wise %}
+
+  <p>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#demo-{{loop.index}}"
+      aria-expanded="false" aria-controls="demo-{{loop.index}}" style="margin-right: 10px">{{element1}}</button>
+  <div class="row">
+    <div class="col">
+      <div class="collapse {{loop.index}}" id="demo-{{loop.index}}">
+        <div class="card card-body">
+          <ul>
+          {% for k in element2 %}
+          <li>{{k}}</li>
+          {%endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </p>
+
+  {% endfor %}
+</div>
+
+<form method="POST" action="/timestamp" enctype="multipart/form-data">
+  <label for="from">From:</label>
+  <select name="from-date" id="from-date">
+    {% for i in date %}
+    <option value="{{i}}">{{i}}</option>
+    {% endfor %}
+  </select>
+
+  <input type="time" step="1" id="from-time" name="from-time" required>
+
+  <label for="to">To:</label>
+  <select name="to-date" id="to-date">
+    {% for i in date %}
+    <option value="{{i}}">{{i}}</option>
+    {% endfor %}
+  </select>
+
+  <input type="time" step="1" id="to-time" name="to-time" required>
+
+
+  <button type="submit" class="btn btn-outline-primary">SUBMIT</button>
+
+</form>
+
+
+<!-- <form method="POST" action="/host_record" enctype="multipart/form-data">
+  
+<div class="form-row align-items-center">
+    <div class="col-sm-3 my-1">
+      <label class="sr-only" for="inlineFormInputName">Host Name</label>
+      <input type="text" name="hostname" class="form-control" id="inlineFormInputName" placeholder="Enter HostName..." required>
+    </div>
+  <button type="submit" class="btn btn-outline-primary">SUBMIT</button>
+
+</form>
+-->
+
+
+
+<div class="row">
+  <div class="col">
+    <ul>
+    {%for topic,tabledata in other_bash%}
+    <br><li><b>{{topic}}</b></li>
+    <table>
+      {%for i in tabledata%}
+        <tr>
+          {%for j in i%}
+            <td style="border: black solid 1px">
+              {{j}}
+            </td>
+          {%endfor%}
+        </tr>
+      {%endfor%}
+    </table>
+    {%endfor%}
+    </div>
+  </ul>
+  </div>
+</div>
+
+
+
+<!-- <form method="POST" action="/app-record" enctype="multipart/form-data">
+  <div class="form-row align-items-center">
+    <div class="col my-1">
+      <label class="sr-only" for="inlineFormInputName">Name</label>
+      <input type="text" name="hostname" class="form-control" id="inlineFormInputName" placeholder="Jane Doe">
+    </div>
+
+    <div class="col-auto my-1">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form> -->
+
+
+
+{% endblock %}
