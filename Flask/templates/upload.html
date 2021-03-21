@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST" action="/record" enctype="multipart/form-data">
+    
+    <div class="mt-2 input-group mb-3">
+        
+        <div class="input-group-prepend">
+        </div>
+        <div class="custom-file">
+            <input type="file" class="custom-file-input" id="inputGroupFile01" name="logfile" aria-describedby="inputGroupFileAddon01" required>
+            <label class="custom-file-label" for="inputGroupFile01">Select File</label>
+        </div>
+    </div> 
+    <button type="submit" class="btn btn-outline-success">UPLOAD</button>
+</form>
+<br>
+
+
+{% endblock content %}
+
+{% block scripts %}
+<script>
+    $('input[type="file"]').change(function (e) {
+        var fileName = e.target.files[0].name;
+        // change name of actual input that was uploaded
+        $(e.target).next().html(fileName);
+    });
+</script>
+{% endblock scripts %}
